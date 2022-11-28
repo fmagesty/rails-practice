@@ -1,7 +1,11 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+
 ruby "2.7.5"
+
+# Use ENV variables [https://github.com/bkeepers/dotenv]
+gem 'dotenv-rails'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
@@ -11,6 +15,8 @@ gem "sprockets-rails"
 
 # Replaced sqlite3 for postgres  [https://github.com/ged/ruby-pg/]
 gem 'pg'
+
+
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"

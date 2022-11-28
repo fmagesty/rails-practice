@@ -6,13 +6,16 @@ default: &default
 development:
   <<: *default
   adapter: postgresql
-  database: ENV["DATABASE_NAME"]
+  # database: postgresdb
+  database: <%= ENV['DATABASE_NAME'] %>
   host: localhost
   encoding: unicode
   pool: 5
-  host: localhost
-  username: ENV["POSTGRES_USERNAME"]
-  password: ENV["POSTGRES_PASSWORD"]
+  # host: localhost
+  # username: postgresuser
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  # password: postgrespassword
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -20,9 +23,9 @@ development:
 test:
   <<: *default
   # TODO: edit below with a testing postgres db
-  database: db/test.sqlite3
+  database: <%= ENV['DATABASE_NAME_TEST'] %>
 
 production:
   <<: *default
   # TODO: edit below with a postgres db - probably won"t be needed since this project might not have a prod environment
-  database: db/production.sqlite3
+  database: <%= ENV['DATABASE_NAME_PROD'] %>
