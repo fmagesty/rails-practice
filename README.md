@@ -53,7 +53,7 @@ To configure it run:
 
 `psql postgres` to log into the postgres service like so:
 
-![postgres terminal](20221127192816.png)
+![postgres terminal](./app/assets/images/doc-postgres-step-1.png)
 
 Then execute:
 ```
