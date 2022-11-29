@@ -36,3 +36,6 @@
 
 # Ignore ENV variables.
 .env
+
+# Ignore Desktop Services Store files from macOS
+.DS_Store
