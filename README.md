@@ -13,7 +13,7 @@
 - Ruby v2.7.5
 - Rails v7.0.4
 - Bundler
-- PostgreSQL v15 - you may need to configure you system's $PATH after installing it to use the `psql` CLI. please refer to [this page](https://postgresapp.com/documentation/cli-tools.html) in order to do so
+- PostgreSQL v14 - you may need to configure you system's $PATH after installing it to use the `psql` CLI. please refer to [this page](https://postgresapp.com/documentation/cli-tools.html) in order to do so
 - Environment variables (please ask a developer for these)
 
 ## **Configuration:**
@@ -90,3 +90,7 @@ ___
 - README: Deployment instructions with CI/CD automation
 - Add services (job queues, cache servers, search engines, etc.)
 - Add Docker
+
+
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-community-brightgreen.svg)](https://rubystyle.guide)
