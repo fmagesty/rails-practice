@@ -53,7 +53,7 @@ To configure it run:
 
 `psql postgres` to log into the postgres service like so:
 
-![postgres terminal](./app/assets/images/doc-postgres-step-1.png)
+![postgres example](./app/assets/images/doc-postgres-example-800x800.png)
 
 Then execute:
 ```
@@ -73,6 +73,16 @@ If there is need to populate the db with data then also run:
 ```
 rails db:seed
 ```
+
+And finally, to run the server, make sure your postgres db is up and running then execute:
+
+```
+rails s
+```
+
+To make sure it's running you can check on your browser like so:
+
+![server up and running](./app/assets/images/doc-server-up-and-running-800x800.png)
 
 ## **How to run the test suite:**
 
